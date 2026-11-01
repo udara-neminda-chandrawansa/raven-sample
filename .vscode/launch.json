@@ -1,0 +1,30 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Raven Sample (gdb / lldb: Linux, macOS, MinGW)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"cwd": "${workspaceFolder}/assets",
+			"stopAtEntry": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{ "description": "Pretty printing", "text": "-enable-pretty-printing", "ignoreFailures": true }
+			],
+			"preLaunchTask": "CMake: build"
+		},
+		{
+			"name": "Raven Sample (Visual Studio debugger: Windows MSVC)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"cwd": "${workspaceFolder}/assets",
+			"stopAtEntry": false,
+			"console": "integratedTerminal",
+			"preLaunchTask": "CMake: build"
+		}
+	]
+}

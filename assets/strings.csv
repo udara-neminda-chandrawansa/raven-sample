@@ -1,0 +1,13 @@
+key,en,fr
+sample.title,Raven Sample,Exemple Raven
+sample.placeholder,Type your name and press Enter,Tapez votre nom puis Entrée
+sample.hello,Hello,Bonjour
+sample.ask_name,What is your name?,Comment vous appelez-vous ?
+sample.button,Click me,Cliquez-moi
+sample.reset,Reset,Réinitialiser
+sample.none,No clicks yet,Aucun clic
+sample.level,Level,Niveau
+sample.switch,Enable something,Activer quelque chose
+sample.quit,Quit,Quitter
+clicks.one,{n} click,{n} clic
+clicks.other,{n} clicks,{n} clics

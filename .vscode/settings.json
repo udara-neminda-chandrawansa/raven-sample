@@ -1,0 +1,17 @@
+{
+	"cmake.configureOnOpen": true,
+	"cmake.buildDirectory": "${workspaceFolder}/build",
+	// Run from assets/ so main.xml and strings.csv are found, and so saving
+	// main.xml while the program runs updates the window.
+	"cmake.debugConfig": {
+		"cwd": "${workspaceFolder}/assets"
+	},
+	"cmake.launchCwd": "${workspaceFolder}/assets",
+	// Optional: use a local Raven checkout instead of downloading it.
+	// "cmake.configureSettings": { "RAVEN_SOURCE_DIR": "C:/path/to/Raven" },
+	// Optional: use a Raven install (the folder that holds lib/ and include/).
+	// "cmake.configureArgs": ["-DCMAKE_PREFIX_PATH=C:/path/to/raven-install"],
+	"files.associations": {
+		"*.xml": "xml"
+	}
+}

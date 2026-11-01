@@ -1,0 +1,29 @@
+<!-- The interface. Save this file while the program runs and the window follows. -->
+<Window Title="Raven Sample" Width="520" Height="420">
+	<VBox Spacing="16" Slot.Padding="24">
+		<Label Text="@sample.title" TextSize="26"/>
+
+		<!-- text input: Enter fires app.greet -->
+		<TextInput Name="name" Placeholder="@sample.placeholder" OnCommitted="app.greet"/>
+		<Label Name="greeting" Text="@sample.ask_name" Opacity="0.7"/>
+
+		<!-- a button that counts -->
+		<HBox Spacing="8">
+			<Button Text="@sample.button" Style="Primary" OnClicked="app.count"/>
+			<Button Text="@sample.reset" OnClicked="app.reset"/>
+			<Label Name="counter" Text="@sample.none" Opacity="0.7" Slot.VAlign="Center"/>
+		</HBox>
+
+		<!-- a slider that drives a progress bar -->
+		<HBox Spacing="12">
+			<Label Text="@sample.level" Slot.VAlign="Center"/>
+			<Slider Min="0" Max="100" Value="35" Step="1" OnChanged="app.volume" Slot.Fill="1" Slot.VAlign="Center"/>
+			<Label Name="meter_text" Text="35%" Width="48" Slot.VAlign="Center"/>
+		</HBox>
+		<ProgressBar Name="meter" Value="0.35"/>
+
+		<Checkbox Text="@sample.switch" Style="Switch"/>
+
+		<Button Text="@sample.quit" OnClicked="app.quit" Slot.HAlign="Left"/>
+	</VBox>
+</Window>
