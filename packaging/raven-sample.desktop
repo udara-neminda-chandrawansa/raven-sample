@@ -3,5 +3,6 @@ Type=Application
 Name=Raven Sample
 Comment=A small program built with the Raven GUI library
 Exec=raven_sample
+Icon=raven-sample
 Terminal=false
 Categories=Utility;

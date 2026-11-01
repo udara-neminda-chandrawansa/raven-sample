@@ -81,6 +81,8 @@ install(FILES assets/main.xml assets/strings.csv DESTINATION "${SAMPLE_ASSETS_DI
 if(UNIX AND NOT APPLE)
 	install(FILES packaging/raven-sample.desktop
 		DESTINATION "${CMAKE_INSTALL_DATADIR}/applications" COMPONENT app)
+	install(FILES packaging/raven-sample.png
+		DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/256x256/apps" COMPONENT app)
 endif()
 
 set(CPACK_PACKAGE_NAME "raven-sample")
